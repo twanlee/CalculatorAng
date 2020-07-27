@@ -1,0 +1,16 @@
+<H1>Calculator</H1>
+<input type="number" #firstNum (change)="onFirstChange(firstNum.value)"> <br>
+
+<select #operator (change)="onOperator(operator)">
+  <option value="+">+</option>
+  <option value="-">-</option>
+  <option value="/">/</option>
+  <option value="x">X</option>
+</select>
+<br>
+<input type="number" #secondNum (change)="onSecondChange(secondNum.value)">
+<br>
+<button (click)="calculate()">Xúc</button>
+<div>
+  {{output}}
+</div>
